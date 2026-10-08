@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>BRAZILIAN FOOD - Meats</title>
+    <style>
+        body {
+            background-color: #f7f5f0;
+        }
+
+        /* Estilização personalizada para a barra arredondada */
+        .custom-navbar {
+            background-color: #3b5966 !important;
+            border-radius: 12px;
+        }
+
+        /* Aba ativa destacada em azul correspondente à imagem */
+        .custom-navbar .nav-link.active-tab {
+            background-color: #3498db;
+            border-radius: 8px;
+        }
+
+        .meat-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap" class="container py-4">
+
+        <!-- Cabeçalho com logo e título -->
+        <div class="text-center mb-4">
+            <i class="fa-solid fa-utensils fa-2x mb-2 text-secondary"></i>
+            <h1 class="fw-bold text-dark">BRAZILIAN FOOD</h1>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar px-3 mb-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-around">
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#drinks">drinks</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#desserts">desserts</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#soups">soups</a></li>
+                        <li class="nav-item"><a class="nav-link text-white active-tab px-3" href="#meats">meats</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#pasta">pasta</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#seafood">seafood</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#salad-sauces">salad and
+                                sauces</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-3" href="#birds">birds</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light text-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Seção Favorite meats of the week -->
+        <h3 class="mb-4 text-dark fw-bold" style="color: #2c3e50 !important;">Favorite meats of the week</h3>
+
+        <div class="row align-items-center mb-5">
+            <!-- Imagem da Carne (Esquerda) -->
+            <div class="col-md-5 mb-4 mb-md-0">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+                    alt="Premium Grilled Ribs with Rosemary" class="meat-img shadow-sm">
+            </div>
+            <!-- Descrição da Carne (Direita) -->
+            <div class="col-md-7">
+                <h2 class="text-secondary fw-normal mb-3" style="color: #4a5568 !important; font-size: 1.8rem;">Premium
+                    Grilled Ribs with Rosemary</h2>
+                <p class="text-muted fs-6 lh-lg" style="color: #2d3748 !important;">
+                    Prime cuts of bone-in meat, perfectly grilled to achieve a beautifully caramelized, lightly charred
+                    crust while keeping the inside tender and juicy. The meat is generously seasoned with coarse sea
+                    salt, cracked black pepper, and fine herbs, topped with fresh rosemary sprigs that release a rich,
+                    smoky aroma. Served hot on a rustic dark board, it is the ultimate dish for BBQ lovers
+                </p>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="bg-dark text-white p-4 rounded mt-5">
+            <p class="mb-3">&copy; Direitos reservados a deivid</p>
+
+            <h5 class="text-secondary">Social Media</h5>
+            <ul class="list-unstyled d-flex gap-3 mb-3">
+                <li><a href="#linkedin" class="text-white text-decoration-none"><i
+                            class="fa-brands fa-square-linkedin fa-lg"></i> LinkedIn</a></li>
+                <li><a href="#instagram" class="text-white text-decoration-none"><i
+                            class="fa-brands fa-square-instagram fa-lg"></i> Instagram</a></li>
+                <li><a href="#whatsapp" class="text-white text-decoration-none"><i
+                            class="fa-brands fa-square-whatsapp fa-lg"></i> WhatsApp</a></li>
+                <li><a href="#threads" class="text-white text-decoration-none"><i
+                            class="fa-brands fa-square-threads fa-lg"></i> Threads</a></li>
+                <li><a href="#vk" class="text-white text-decoration-none"><i class="fa-brands fa-vk fa-lg"></i> VK</a>
+                </li>
+            </ul>
+
+            <h5 class="text-secondary">Contatos</h5>
+            <ul class="list-unstyled">
+                <li><a href="#email" class="text-white text-decoration-none"><i class="fa-solid fa-envelope"></i>
+                        support@brazilianfood.com</a></li>
+                <li><a href="#tel" class="text-white text-decoration-none"><i class="fa-solid fa-phone"></i> +1 (555)
+                        123-4567</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NvU4X/2rT84QoBRj0HW+R+XWjB0x65J3W5F7uH1T9S8G2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
